@@ -45,24 +45,6 @@
 
 ---
 
-## 🆚 Comparison: Community v1 vs BDD Agent v2
-
-| Capability | Community v1 | BDD Agent v2 |
-|---|---|---|
-| **Runtime Dependencies** | Requires Node.js, `npm`, and `npx` wrappers | **100% Pure Python** — zero Node.js / `npx` required |
-| **Protocol Architecture** | Unofficial external MCP wrappers | **FastMCP 4.0 Stdio Servers** (`browser_server.py`, `assertion_server.py`) |
-| **Browser Execution Mode** | Headless only | **Toggleable**: Headless (CI/CD) or **Headed (Watch live on desktop)** |
-| **Selector Engine** | Rigid CSS selectors only (prone to breakage) | **Multi-Attribute Fallback**: `data-test`, `id`, `name`, `placeholder`, `aria-label`, visible text |
-| **Form Controls** | Basic text input only | **Inputs, Dropdown Selectors (`select_option`), Clear (`clear_input`), Keys (`Enter`, `Tab`)** |
-| **AI Test Generation** | None | **Natural Language to Gherkin** with 1-click presets & offline generation |
-| **Video Recording** | None | **Native WebM recording** with per-scenario video dropdown player |
-| **User Interface** | CLI script / Raw Jupyter notebook | **Modern Gradio 6.0 Dashboard** with real-time log streaming and full suite controls |
-| **Execution Breakdown** | Aggregated pass/fail count | **Granular Step Breakdown** (Every `Given`, `When`, `Then` tracked individually) |
-| **Audit Reporting** | Raw JSON dump to disk | **Self-Contained Visual HTML Report** with inline base64 media & modal lightbox |
-| **Test Suite Breadth** | Single hardcoded Todo scenario | **3 Production-Grade Suites**: Todo Management, SauceDemo E-Commerce, Form Validation |
-
----
-
 ## 🏗️ System Architecture
 
 ```mermaid
