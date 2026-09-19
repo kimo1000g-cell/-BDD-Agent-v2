@@ -1,0 +1,20 @@
+[project]
+name = "bdd-agent-v2"
+version = "0.2.0"
+description = "Autonomous AI QA Testing Platform powered by FastMCP and Python Playwright"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=4.0.0",
+    "mcp>=2.2.0",
+    "playwright>=1.40.0",
+    "gradio>=6.0.0",
+    "pydantic>=2.10.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.50.0",
+]
+
+[project.scripts]
+bdd-ui = "app:demo.launch"
+bdd-browser-server = "browser_server:mcp.run"
+bdd-assertion-server = "assertion_server:mcp.run"
